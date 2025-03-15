@@ -1,0 +1,87 @@
+/* Estilos para el contenedor principal del juego */
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para la información del juego */
+  .game-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Estilos para el tablero de juego */
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el texto de estado */
+  .status {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para las filas de la tabla */
+  .board-row {
+    display: flex;
+  }
+  
+  /* Estilos para las casillas del tablero */
+  .square {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid #333;
+    background-color: #3b3f5c;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Cambiar color de la casilla cuando el cursor pasa sobre ella */
+  .square:hover {
+    background-color: #d1e7dd;
+    transform: scale(1.1);
+  }
+  
+  /* Estilo para las casillas cuando ya están ocupadas */
+  .square:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos para los botones de los movimientos */
+  button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Cambiar color de los botones cuando el cursor pasa sobre ellos */
+  button:hover {
+    background-color: #0277bd;
+  }
+  
+  /* Estilo para la lista de movimientos */
+  ol {
+    padding-left: 20px;
+  }
+  
